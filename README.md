@@ -26,19 +26,15 @@ class Cards
 		 for (int i = 12; i >0; i--) {
     		for(int j=3;j>0;j--)
     		{
-
-    			int x=r1.nextInt(i);
+                        int x=r1.nextInt(i);
     			int y=r2.nextInt(j);
     			System.out.println(x);
             	String temp = card[i][j];
             	card[i][j]= card[x][y];
             	card[x][y]= temp;
-
-    		}         
+		}         
             
         }
-
-
 		for(int i=0;i<13;i++)
 		{
 			System.out.println("Player "+(i+1)+" Cards");
@@ -49,16 +45,7 @@ class Cards
 			System.out.println();
 			System.out.println();
 		}
-
-
-
-
-
-
-	}
-
-
-
+		}
 }
 
 
