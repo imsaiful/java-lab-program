@@ -1,7 +1,8 @@
 # java-lab-program
 All the java lab program of AIACTR 5 sem
 Program 5:
-'''import java.util.*;
+```
+import java.util.*;
 class Cards
 {
 	public static void main(String[] args)
@@ -48,11 +49,20 @@ class Cards
 			System.out.println();
 			System.out.println();
 		}
-	}
- }'''
 
- 
- 
+
+
+
+
+
+	}
+
+
+
+}
+
+
+```
  
  
  
