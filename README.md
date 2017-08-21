@@ -48,10 +48,8 @@ class Cards
 		}
 		}
 }
-
-
 ```
- 
+ ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/cards)
  
  
  
