@@ -2,6 +2,7 @@
 All the java lab program of AIACTR 5 sem
 Program 5:
 ```
+Program 5:Shuffle the cards
 import java.util.*;
 class Cards
 {
