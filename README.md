@@ -1,5 +1,6 @@
 # java-lab-program
 All the java lab program of AIACTR 5 sem
+
 Program 1:
 ```
 class Program1
@@ -12,6 +13,45 @@ class Program1
 ```
 ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-03%2023-40-59.png)
 
+Program 2:
+```
+import java.util.*;
+class Program2
+{
+	public static void main(String[] args)
+	{
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter the first Number");
+		int a=in.nextInt();
+		System.out.println("Enter the Second Number");
+		int b=in.nextInt();
+		int s=a+b;
+		System.out.println(a+"+"+b+"="+s);
+	}
+}
+
+```
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-03%2023-53-39.png)
+
+Program 3:
+
+```
+class Program3
+{
+	public static void main(String[] args)
+	{
+		String a="456";//octal number
+		String b="ABCD";//Heaxadecimal Number
+		int a1=Integer.parseInt(a,8);//conversion to int using wrapper class
+		int b1=Integer.parseInt(b,16);//conversion to int using wrapper class
+		int s=a1+b1;
+		System.out.println("Octal Number ="+a);
+		System.out.println("Hexadecimal Number ="+b);
+		System.out.println("Addition="+s);
+	}
+}
+```
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2000-04-12.png)
 
 Program 5:
 ```
