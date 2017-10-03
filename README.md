@@ -71,8 +71,41 @@ class Program4
 }
 ```
 ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2000-26-18.png)
+#Program 5
+```
+import java.util.*;
+class Program5
+{
+	public static void main(String[] args)
+	{
+		Scanner in=new Scanner(System.in);
+		Random ran=new Random();
+		int x=ran.nextInt(10);
+		System.out.println(x);
+		int flag=0;
+	    boolean guess=false;
+		while(!guess)
+		{
+			flag++;
+			System.out.println("Guess the number between 1 to 9");
+			int y=in.nextInt();
+			if(x==y)
+			{
+				System.out.println("Correct Guess in "+flag+" try");
+				break;
+			}
+			else
+			{
+				System.out.println("Wrong Guess. Please try Again");
 
-Program 5:
+			}
+       }
+	}
+}
+```
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2001-23-37.png)
+
+Program 6:
 ```
 Program 5:Shuffle the cards
 import java.util.*;
