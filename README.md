@@ -40,18 +40,18 @@ class Program3
 {
 	public static void main(String[] args)
 	{
-		String a="456";//octal number1
-		String b="ABCD";//Heaxadecimal Number
-		int a1=Integer.parseInt(a,8);//conversion to int using wrapper class
-		int b1=Integer.parseInt(b,16);//conversion to int using wrapper class
-		int s=a1+b1;
-		System.out.println("Octal Number ="+a);
-		System.out.println("Hexadecimal Number ="+b);
-		System.out.println("Addition="+s);
-	}
+		int x=010;
+		int y=06;
+		int z=x+y;
+		int a=0x010;
+		int b=0x6;
+		int c=a+b;
+		System.out.println("Octal Addition="+z);
+		System.out.println("Hexa Addition="+c);
+}
 }
 ```
-![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2000-04-12.png)
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2001-08-37.png)
 Program 4:
 ```
 class Program4
