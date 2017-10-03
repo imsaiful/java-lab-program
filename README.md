@@ -40,26 +40,18 @@ class Program3
 {
 	public static void main(String[] args)
 	{
-		String oct_num1="456";
-		String oct_num2="456";
-		String hex_num1="ABCD";
-		String hex_num2="ABCD";
-		int num1=Integer.parseInt(oct_num1,8);
-		int num2=Integer.parseInt(oct_num1,8);
-		int num3=Integer.parseInt(hex_num1,16);//conversion to int using wrapper class
-		int num4=Integer.parseInt(hex_num1,16);
-		int s1=num1+num2;
-		int s2=num3+num4;
-		System.out.println("Octal Number_1="+oct_num1);
-		System.out.println("Octal Number_2="+oct_num2);
-		System.out.println("Addition="+s1);
-		System.out.println("HexaDecimal Number_1="+hex_num1);
-		System.out.println("HexaDecimal Number_2="+hex_num2);
-		System.out.println("Addition="+s2);
+		String a="456";//octal number1
+		String b="ABCD";//Heaxadecimal Number
+		int a1=Integer.parseInt(a,8);//conversion to int using wrapper class
+		int b1=Integer.parseInt(b,16);//conversion to int using wrapper class
+		int s=a1+b1;
+		System.out.println("Octal Number ="+a);
+		System.out.println("Hexadecimal Number ="+b);
+		System.out.println("Addition="+s);
 	}
 }
 ```
-![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2000-37-16.png)
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2000-04-12.png)
 Program 4:
 ```
 class Program4
