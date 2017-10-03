@@ -208,3 +208,58 @@ class Program7
 }
  ```
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2002-17-33.png)
+  Program 8:
+  
+  ```
+import java.util.*;
+interface Shape
+{
+	void input();
+	void area();
+	void volume();
+	void show();
+}
+class Disk implements Shape
+{
+	int r, h;
+	public final double pi=3.14;
+	public void input()
+	{
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter circle Radius");
+		r=in.nextInt();
+		System.out.println("Enter circle Height");
+		h=in.nextInt();
+	}
+	public void show()
+	{
+		System.out.println("Radius="+r);
+		System.out.println("Height="+h);
+	}
+	public void area()
+	{
+		double area=2*pi*r*(r+h);
+		System.out.println("Area="+area);
+	}
+	public void volume()
+	{
+		double volume=pi*r*r*h;
+		System.out.println("Volume="+volume);
+	}
+} 
+class Program8
+{
+	public static void main(String[] args)
+	{
+		Disk d=new Disk();
+		d.input();
+		d.show();
+		d.area();
+		d.volume();
+	}
+}
+  
+  
+  ```
+  
+  ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2002-45-09.png)
