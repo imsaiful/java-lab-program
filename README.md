@@ -10,9 +10,7 @@ class Program1
 	}
 }
 ```
-
-
-
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-03%2023-40-59.png)
 
 
 Program 5:
