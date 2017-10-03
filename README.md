@@ -52,6 +52,25 @@ class Program3
 }
 ```
 ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2000-04-12.png)
+Program 4:
+```
+class Program4
+{
+	public static void main(String[] args)
+	{
+		String first[]={"Lion ","Crow " , "Fish "};
+		String middle[]={"lives in ","is fly in ","lives inside "};
+		String last[]={"Jungle.","sky. ","water."};
+		for(int i=0;i<3;i++)
+		{
+			System.out.print(first[i]+middle[i]+last[i]);
+			System.out.println();
+		}
+
+	}
+}
+```
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2000-26-18.png)
 
 Program 5:
 ```
