@@ -1,5 +1,20 @@
 # java-lab-program
 All the java lab program of AIACTR 5 sem
+Program 1:
+```
+class Program1
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World");
+	}
+}
+```
+
+
+
+
+
 Program 5:
 ```
 Program 5:Shuffle the cards
