@@ -2,7 +2,7 @@
 All java lab program of AIACTR 5 sem
 AIM:
 ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/WhatsApp%20Image%202017-10-03%20at%2023.24.37.jpeg)
-
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/WhatsApp%20Image%202017-11-03%20at%2010.17.46%20PM.jpeg)
 
 Program 1:
 ```
@@ -353,3 +353,51 @@ System.out.println("finally block is executed");
 ```
 
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2003-37-05.png)
+ 
+ 
+ Program 15: Write a program to inplement synchronising
+ ```
+ class Synch
+{
+	 synchronized void print(int n)
+	 {
+	 	
+	 	for(int i=1;i<=n;i++)
+	 	{
+	 		try
+	 	{
+	 		Thread.sleep(500);	
+	 	}
+	 	catch(Exception e)
+	 	{
+	 		System.out.println(e);
+	 	}
+	 		System.out.println(n*i);
+	 	}
+	 	
+	 	
+	 }
+public static void main(String[] args)
+{
+	final Synch s=new Synch();
+	Thread t1=new Thread()
+	{
+		public void run()
+		{
+			s.print(8);
+		}
+	};
+	Thread t2=new Thread(){
+		public void run()
+		{
+			s.print(9);
+		}
+	};
+	t1.start();
+	t2.start();
+}
+}
+ ```
+ 
+  ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/sy.png)
+ 
