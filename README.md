@@ -533,7 +533,8 @@ class SetExample
 		{
 			System.out.print(itr.next()+" ");
 		}
-	}
-}```
-    
-![alt text](https://github.com/imsaiful/java-lab-program/blob/master/set.png)
+		}
+}
+```
+   
+  ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/set.png)
