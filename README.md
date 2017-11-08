@@ -538,3 +538,42 @@ class SetExample
 ```
    
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/set.png)
+  
+  Program 20: TreeSet
+  
+```
+import java.util.*;
+class TreeSetExample
+{
+	public static void main(String[] args)
+	{
+		Scanner in=new Scanner(System.in);
+		TreeSet<Integer> a = new TreeSet<Integer>();
+		System.out.println("Enter the Number of  Elements");
+		int n=in.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			int x=in.nextInt();
+			a.add(x);
+		}
+		System.out.print("\nElements are ");
+		Iterator itr=a.iterator();
+		while(itr.hasNext())
+		{
+			System.out.print(itr.next()+" ");
+		}
+		System.out.println("\nEnter the element to remove");
+		int x=in.nextInt();
+		a.remove(x);
+
+		System.out.print("\n "+x+" remove.\nNew set elements are  ");
+		itr=a.iterator();
+		while(itr.hasNext())
+		{
+			System.out.print(itr.next()+" ");
+		}
+	}
+}
+```
+  ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/tree.png)
+
