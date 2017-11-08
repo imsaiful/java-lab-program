@@ -457,3 +457,84 @@ public static void main(String[] args)
  ```
  
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/sy.png)
+  
+  
+  Program 19.1 : ArrayList
+  
+  ```
+  import java.util.*;
+class ArrayListExample
+{
+	public static void main(String[] args)
+	{
+		Scanner in=new Scanner(System.in);
+		ArrayList<Integer> a = new ArrayList<Integer>();
+		System.out.println("Enter the Number of  Elements");
+		int n=in.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			int x=in.nextInt();
+			a.add(x);
+		}
+		System.out.println();
+		System.out.print("Elements Are:");
+		for(int i=0;i<n;i++)
+		{
+			System.out.print(a.get(i)+" ");
+		}
+		System.out.println(" ");
+		System.out.print("Sorted Elements Are:");
+		Collections.sort(a);
+		for(int i=0;i<n;i++)
+		{
+			System.out.print(a.get(i)+" ");
+		}
+		System.out.println(" ");
+		System.out.println("List Size is="+ a.size());
+		System.out.println("Lasgest Element is="+ a.get(a.size()-1));
+	
+	}
+
+}
+
+```
+
+  ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/array.png)
+  
+  Program 19.2 HashSet
+  ```
+  import java.util.*;
+class SetExample
+{
+	public static void main(String[] args)
+	{
+		Scanner in=new Scanner(System.in);
+		HashSet<Integer> a = new HashSet<Integer>();
+		System.out.println("Enter the Number of  Elements");
+		int n=in.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			int x=in.nextInt();
+			a.add(x);
+		}
+		System.out.print("\nElements are ");
+		Iterator itr=a.iterator();
+		while(itr.hasNext())
+		{
+			System.out.print(itr.next()+" ");
+		}
+		System.out.println("\nEnter the element to remove");
+		int x=in.nextInt();
+		a.remove(x);
+
+		System.out.print("\n "+x+" remove.\nNew set elements are  ");
+		itr=a.iterator();
+		while(itr.hasNext())
+		{
+			System.out.print(itr.next()+" ");
+		}
+	}
+}
+  ```
+  
+    ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/set.png)
