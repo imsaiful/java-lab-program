@@ -355,7 +355,7 @@ System.out.println("finally block is executed");
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-10-04%2003-37-05.png)
  
  
- Program 15: Write a program to inplement synchronising
+ Program 15: Write a program to implement synchronizing
  ```
  class Synch
 {
@@ -401,3 +401,57 @@ public static void main(String[] args)
  
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/sy.png)
  
+ Program 14:Write a program to demonstrate wait and notify for the Multithreading in Java
+ ```
+ import java.util.*;
+class Atm
+{
+	static int  balance=1000;
+	synchronized void Withdraw(int money)
+	{
+		System.out.println("Processing");
+		if((balance-money)<0)
+		{
+			System.out.println("Insufficient balance");
+			try
+			{
+				wait();
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			
+		}
+		
+			balance=balance-money;
+			System.out.println("Withdraw Complete. Remaining Balance="+balance);
+		
+	}
+	synchronized void deposit(int money)
+	{
+		balance=balance+money;
+		System.out.println(money+" deposit succesfully");
+		notify();
+	}
+}
+class Interthread 
+{
+	public static void main(String[] args)
+	{
+		
+		final Atm a=new Atm();
+		new Thread(){  
+						public void run(){
+							
+							a.Withdraw(1500);}  
+					}.start();  
+		new Thread(){  
+						public void run(){
+							a.deposit(1500);}  
+					}.start(); 
+	}
+}
+ ```
+
+  ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/multi.png)
