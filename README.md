@@ -550,6 +550,39 @@ class MyServer
 ```
 ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/client.png)
 
+Program 18:
+```
+Student.java
+import java.io.Serializable;
+class Student implements Serializable
+{
+	String name;
+	int rollno;
+	Student(int rollno,String name)
+	{
+		this.rollno=rollno;
+		this.name=name;
+		
+	}
+}
+
+StudentDat.java
+import java.io.*;
+class StudentDat
+{
+	public static void main(String[] args) throws Exception
+	{
+		  Student s1 =new Student(001,"Aditya");
+		  FileOutputStream fout=new FileOutputStream("robot.txt");
+		  ObjectOutputStream out=new ObjectOutputStream(fout);
+		  out.writeObject(s1);
+		  out.flush();
+		  System.out.println("Success");
+	}
+}
+```
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/imsaiful.png)
+
   Program 19.1 : ArrayList
   
   ```
