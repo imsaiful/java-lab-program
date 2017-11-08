@@ -489,6 +489,67 @@ public static void main(String[] args) throws Exception{
   ```
   
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-11-08%2019-37-01.png)
+  
+  Probram 17: Read and write from the socket
+  ```
+MyClient.java File
+import java.io.*;
+import java.net.*;
+class Myclient
+{
+	public static void main(String[] args) throws Exception
+	{
+		Socket s=new Socket("localhost",3333);
+		DataInputStream din=new DataInputStream(s.getInputStream());
+		DataOutputStream dout=new DataOutputStream(s.getOutputStream()); 
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));  
+		String str1="";
+		String str2="";
+		while(!str1.equals("stop"))
+		{
+			str1=br.readLine();
+			dout.writeUTF(str1);
+			dout.flush();
+			str2=din.readUTF();
+			System.out.println("Server:"+str2);
+		}
+		dout.close();
+		s.close();
+	}
+}
+
+
+
+MyServer.java file
+import java.io.*;
+import java.net.*;
+class MyServer
+{
+	public static void main(String[] args) throws Exception
+	{
+		ServerSocket ss=new ServerSocket(3333);
+		Socket s=ss.accept();
+		DataInputStream din=new DataInputStream(s.getInputStream());
+		DataOutputStream dout=new DataOutputStream(s.getOutputStream());
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		String str1="";
+		String str2="";
+		while(!str1.equals("stop"))
+		{
+			str1=din.readUTF();
+			System.out.println("Client Says:"+str1);
+			str2=br.readLine();
+			dout.writeUTF(str2);
+			dout.flush();
+		}
+		din.close();
+		s.close();
+		ss.close();
+	}
+}
+```
+![alt text](https://github.com/imsaiful/java-lab-program/blob/master/client.png)
+
   Program 19.1 : ArrayList
   
   ```
