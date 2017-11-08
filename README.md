@@ -458,7 +458,37 @@ public static void main(String[] args)
  
   ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/sy.png)
   
+  Program 16:
   
+  ```
+  import java.io.*;
+public class FileWrite1 {
+public static void main(String[] args) throws Exception{
+	FileWriter fw=new FileWriter("Robot.txt");
+	BufferedWriter bf=new BufferedWriter(fw);
+	bf.write(65);
+	bf.newLine();char ch[]={'a','p','p','l','e'};
+	bf.write(ch);
+	bf.newLine();
+	bf.write("B");
+	bf.newLine();
+	bf.write("Ball");
+	bf.flush();
+	bf.close();
+	FileReader fr=new FileReader("Robot.txt");
+	BufferedReader br=new BufferedReader(fr);
+	String s=br.readLine();
+	while(s!=null)
+		{
+			System.out.println(s);
+			s=br.readLine();
+		}
+	bf.close();
+}
+} 
+  ```
+  
+  ![alt text](https://github.com/imsaiful/java-lab-program/blob/master/Screenshot%20from%202017-11-08%2019-37-01.png)
   Program 19.1 : ArrayList
   
   ```
