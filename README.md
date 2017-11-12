@@ -356,6 +356,46 @@ System.out.println("finally block is executed");
  
  
  
+ Program 11: Applet Program
+ ```
+ 
+import java.applet.*;
+import java.awt.*;
+
+ /* <applet code = "AppletTest.class" width = 300 height = 300> </applet> */
+
+public class AppletTest extends Applet
+{
+	public void init()
+	{
+		System.out.println("Applet Initialized");
+
+	}
+	public void start()
+	{
+		System.out.println("Applet is start");
+
+	}
+	public void paint(Graphics g)
+    {
+    	System.out.println("Applet is painted");
+    	//super.paint( g );
+
+        g.drawString("Hello",123,125);
+     }
+	
+
+	
+	
+ 
+    public void destroy()
+    {
+    	System.out.println("Applet Destroy");
+    }
+}
+ 
+ ```
+ 
  Program 14:Write a program to demonstrate wait and notify for the Multithreading in Java
  ```
  import java.util.*;
